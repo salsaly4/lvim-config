@@ -37,5 +37,14 @@ lvim.builtin.lualine.options.theme = lualine_nightfly
 
 lvim.builtin.nvimtree.setup.view.width = 50
 
+
+-- keybindings
+lvim.builtin.which_key.mappings["ee"] = {
+  ":NvimTreeToggle<CR>"
+}
+lvim.builtin.which_key.mappings["ef"] = {
+  ":NvimTreeFocus<CR>"
+}
+
 -- no-neck-pain
 -- require("lazy").setup({{"shortcuts/no-neck-pain.nvim", version = "*"}})
