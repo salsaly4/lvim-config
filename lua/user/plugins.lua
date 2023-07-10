@@ -21,4 +21,13 @@ lvim.plugins = {
     end,
     dependencies = {{'nvim-lua/plenary.nvim'}}
   },
+
+  -- Hop (movement plugin)
+  {
+    'phaazon/hop.nvim',
+    branch = 'v2',
+    config = function ()
+      require('hop').setup()
+    end
+  }
 }
