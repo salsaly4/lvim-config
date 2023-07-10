@@ -13,7 +13,12 @@ require("nvim-treesitter.install").prefer_git = true
 
 lvim.plugins = {
   { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
-{ "YannickFricke/codestats.nvim"},
+  { "YannickFricke/codestats.nvim",
+    config = function()
+      require('codestats-nvim').setup()
+    end,
+    dependencies = {{'nvim-lua/plenary.nvim'}}
+  },
 }
 
 lvim.colorscheme='nightfly'
