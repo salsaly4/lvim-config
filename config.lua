@@ -7,19 +7,7 @@
 vim.opt.guifont = 'CaskaydiaCovePL Nerd Font:h16'
 vim.opt.relativenumber = true
 
--- Plugins
--- Fix for treesitter 'download failed'
-require("nvim-treesitter.install").prefer_git = true
-
-lvim.plugins = {
-  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
-  { "YannickFricke/codestats.nvim",
-    config = function()
-      require('codestats-nvim').setup()
-    end,
-    dependencies = {{'nvim-lua/plenary.nvim'}}
-  },
-}
+reload('user.plugins')
 
 lvim.colorscheme='nightfly'
 lvim.builtin.lualine.style = 'default'
