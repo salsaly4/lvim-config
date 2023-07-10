@@ -8,6 +8,7 @@ vim.opt.guifont = 'CaskaydiaCovePL Nerd Font:h16'
 vim.opt.relativenumber = true
 
 reload('user.plugins')
+reload('user.keymap')
 
 lvim.colorscheme='nightfly'
 lvim.builtin.lualine.style = 'default'
